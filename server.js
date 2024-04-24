@@ -19,6 +19,8 @@ app.use(cors({
   credentials: true // Allow cookies and other credentials to be sent
 }));
 
+app.use('/', express.static('/C:\Users\achar\OneDrive\Documents\React Tutorial\My_Village\dist'))
+
 // Endpoint to handle sending emails
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
